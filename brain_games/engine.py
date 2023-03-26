@@ -17,7 +17,7 @@ def start_games(game):
         print(f'Question: {example}')
         player_answer = prompt.string('Your answer: ')
 
-        if int(player_answer) == correct_answer:
+        if player_answer == correct_answer:
             print('Correct!')
             index += 1
         else:
