@@ -2,6 +2,7 @@ import random
 
 RULE = 'What number is missing in the progression?'
 
+
 def get_progression():
     first_number = random.randint(0, 10)
     progression = [first_number]
