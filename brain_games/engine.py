@@ -21,7 +21,7 @@ def start_games(game):
             print('Correct!')
             index += 1
         else:
-            print(f"'{player_answer}' is wrong answer ;(. Correst answer was '{correct_answer}'.")
+            print(f"'{player_answer}' is wrong answer ;(./nCorrest answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
 
