@@ -13,10 +13,10 @@ def is_prime(number):
 
 
 def brain_plays():
-    example = random.randint(0, 100)
-    if is_prime(example):
+    question = random.randint(0, 100)
+    if is_prime(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
 
-    return example, correct_answer
+    return question, correct_answer

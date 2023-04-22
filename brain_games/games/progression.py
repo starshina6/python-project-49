@@ -29,6 +29,6 @@ def brain_plays():
     correct_answer = str(answer)
 
     progression[random_index] = '..'
-    example = ' '.join(map(str, progression))
+    question = ' '.join(map(str, progression))
 
-    return example, correct_answer
+    return question, correct_answer

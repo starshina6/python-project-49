@@ -12,9 +12,9 @@ def start_games(game):
     print(game.RULE)
 
     while index < SCORE_MAX:
-        example, correct_answer = game.brain_plays()
+        question, correct_answer = game.brain_plays()
 
-        print(f'Question: {example}')
+        print(f'Question: {question}')
         player_answer = prompt.string('Your answer: ')
 
         if player_answer == correct_answer:

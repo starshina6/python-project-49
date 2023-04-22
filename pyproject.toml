@@ -4,6 +4,12 @@ version = "0.1.0"
 description = ""
 authors = ["starshina6 <125303949+starshina6@users.noreply.github.com>"]
 readme = "README.md"
+repository = "https://github.com/starshina6/python-project-49"
+classifiers = [
+    "Programming Language :: Python :: 3.11"
+    "Operating System :: MacOS"
+]
+
 packages = [
   { include = "brain_games" },
 ]
