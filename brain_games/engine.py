@@ -3,7 +3,7 @@ import prompt
 SCORE_MAX = 3
 
 
-def start_games(game):
+def play_games(game):
     index = 0
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
