@@ -4,6 +4,7 @@ RULE = 'What number is missing in the progression?'
 MIN_VALUE = 1
 MAX_VALUE = 30
 
+
 def get_progression():
     first_number = random.randint(MIN_VALUE, MAX_VALUE)
     progression = [first_number]
