@@ -14,7 +14,7 @@ def is_prime(number):
     return True
 
 
-def brain_plays():
+def get_round():
     question = random.randint(MIN_VALUE, MAX_VALUE)
     if is_prime(question):
         correct_answer = 'yes'

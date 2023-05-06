@@ -6,7 +6,7 @@ MIN_VALUE = 1
 MAX_VALUE = 30
 
 
-def brain_plays():
+def get_round():
     number_one = random.randint(MIN_VALUE, MAX_VALUE)
     number_two = random.randint(MIN_VALUE, MAX_VALUE)
     question = f'{number_one} {number_two}'

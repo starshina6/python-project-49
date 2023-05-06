@@ -1,16 +1,14 @@
 import random
 
 RULE = 'What number is missing in the progression?'
-MIN_VALUE = 1
-MAX_VALUE = 30
 
 
 def get_progression():
-    first_number = random.randint(MIN_VALUE, MAX_VALUE)
+    first_number = random.randint(0, 10)
     progression = [first_number]
 
-    progression_len = random.randint(MIN_VALUE, MAX_VALUE)
-    step = random.randint(MIN_VALUE, MAX_VALUE)
+    progression_len = random.randint(5, 10)
+    step = random.randint(2, 10)
     i = 1
 
     while i < progression_len:
@@ -21,7 +19,7 @@ def get_progression():
     return progression
 
 
-def brain_plays():
+def get_round():
     progression = get_progression()
 
     last_index = len(progression) - 1

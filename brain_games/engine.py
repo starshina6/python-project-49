@@ -1,9 +1,9 @@
 import prompt
 
-SCORE_MAX = 3
+ROUNDS_COUNT = 3
 
 
-def play_games(game):
+def play_game(game):
     index = 0
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -11,8 +11,8 @@ def play_games(game):
 
     print(game.RULE)
 
-    while index < SCORE_MAX:
-        question, correct_answer = game.brain_plays()
+    while index < ROUNDS_COUNT:
+        question, correct_answer = game.get_round()
 
         print(f'Question: {question}')
         player_answer = prompt.string('Your answer: ')

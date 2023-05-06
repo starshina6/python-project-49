@@ -5,12 +5,15 @@ MIN_VALUE = 1
 MAX_VALUE = 30
 
 
-def brain_plays():
-    question = random.randint(MIN_VALUE, MAX_VALUE)
-
-    if question % 2 == 0:
-        correct_answer = 'yes'
+def is_even(number):
+    if number % 2 == 0:
+        return 'yes'
     else:
-        correct_answer = 'no'
+        return 'no'
+
+
+def get_round():
+    question = random.randint(MIN_VALUE, MAX_VALUE)
+    correct_answer = is_even(question)
 
     return question, correct_answer
